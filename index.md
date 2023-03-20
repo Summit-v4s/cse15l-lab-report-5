@@ -27,7 +27,7 @@ Implementations and Examples
 
 ### **1. Compile and Server start command:**
 ```
-javac -cp ".;/lib/commons-text-1.10.0.jar" *.java
+javac -cp ".;lib/commons-text-1.10.0.jar" *.java
 java -cp ".;lib/commons-text-1.10.0.jar" DocSearchServer [####]
 ```
 This command initializes the web server for docsearch. [####] is for port number.
