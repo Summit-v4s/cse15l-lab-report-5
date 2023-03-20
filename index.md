@@ -25,12 +25,12 @@ With this prompt, I got suggested with different functions as mentioned above, a
 Implementations and Examples
 -------
 
-### **1. Server start command:**
+### **1. Compile and Server start command:**
 ```
-javac Server.java DocSearchServer.java
-java DocSearchServer [####]
+javac -cp ".;/lib/commons-text-1.10.0.jar" *.java
+java -cp ".;lib/commons-text-1.10.0.jar" DocSearchServer [####]
 ```
-This command initializes the web server for docsearch.
+This command initializes the web server for docsearch. [####] is for port number.
 * * *
 ### **2. Search for keyword "hello":**
 ```
