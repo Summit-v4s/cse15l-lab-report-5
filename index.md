@@ -49,7 +49,7 @@ This command adds case-insensitive search condition, showing 4 results instead o
 
 ### **4. Search for keyword "aple" with fuzzy search:**
 ```
-http://localhost:8080/search?q=aple
+http://localhost:8080/search?q=aple&fuzzy=true&max_dist=1
 ```
 Since "aple" is supposed to act as a typo of "apple", it is showing less than 40 results with regular search. <br>
 ![](https://cdn.discordapp.com/attachments/890102969536753746/1087450106032312380/image.png)<br>
