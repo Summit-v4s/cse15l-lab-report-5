@@ -54,15 +54,16 @@ http://localhost:8080/search?q=aple&fuzzy=true&max_dist=1
 Since "aple" is supposed to act as a typo of "apple", it is showing less than 40 results with regular search. <br>
 ![](https://cdn.discordapp.com/attachments/890102969536753746/1087450106032312380/image.png)<br>
 <br>
-However, when fuzzy search is enabled with max_dist=1, Lavenshtein distance measures how far the two strings are from being an exact match. <br>
-This command will search for any words that are 1 string different than the keyword "aple", showing much more results of 12 pages.<br>
+When fuzzy search is enabled with max_dist=1, Lavenshtein distance measures how far the two strings are from being an exact match, showing many more results of 12 pages.<br>
+However, this command will search for any words that are 1 string different than the keyword "aple", and this does not only apply to "apple".<br>
 ![](https://cdn.discordapp.com/attachments/890102969536753746/1087451211042664508/image.png)<br>
 * * *
 ### **5. Search for pattern using regex:**
 ```
 http://localhost:8080/search?q=app.e&regex=true
 ```
-This example command searches for a keyword "app+[any single letter]+e". For example, it would look for "apple", "appee", "appnl", etc. In this case, it's matching for word "apple", although the keyword was not exactly "apple".
+This example command searches for a keyword "app+[any single letter]+e". For example, it would look for "apple", "appee", "appnl", etc. In this case, it's matching for word "apple", although the keyword was not exactly "apple".<br>
+![](https://cdn.discordapp.com/attachments/890102969536753746/1087512256234926160/image.png)
 * * *
 ### **6. Go through different pages using pagination:**
 ```
